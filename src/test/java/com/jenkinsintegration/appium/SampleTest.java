@@ -32,10 +32,10 @@ public class SampleTest {
 				
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
-		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
-		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
-//		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, System.getProperty("PlatformName"));
-//		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, System.getProperty("PlatformVersion"));
+//		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
+//		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
+		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, System.getProperty("PlatformName"));
+		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, System.getProperty("PlatformVersion"));
 
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone Simulator");
 		
@@ -54,7 +54,7 @@ public class SampleTest {
 //		System.out.println(driver.findElements(By.className("UIAPickerWheel")).get(3).getAttribute("values"));
 
 		driver.findElements(By.className("UIAPickerWheel")).get(0).sendKeys("Jun 12");
-		driver.findElements(By.className("UIAPickerWheel")).get(1).sendKeys("8");
+		driver.findElements(By.className("UIAPickerWheel")).get(1).sendKeys("5");
 		driver.findElements(By.className("UIAPickerWheel")).get(2).sendKeys("10");
 //
 		driver.findElements(By.className("UIAPickerWheel")).get(3).sendKeys("AM"); 
