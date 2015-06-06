@@ -53,8 +53,8 @@ public class SampleTest {
 //		System.out.println(driver.findElements(By.className("UIAPickerWheel")).get(2).getAttribute("values"));
 //		System.out.println(driver.findElements(By.className("UIAPickerWheel")).get(3).getAttribute("values"));
 
-		driver.findElements(By.className("UIAPickerWheel")).get(0).sendKeys("Jun 6");
-		driver.findElements(By.className("UIAPickerWheel")).get(1).sendKeys("10");
+		driver.findElements(By.className("UIAPickerWheel")).get(0).sendKeys("Jun 12");
+		driver.findElements(By.className("UIAPickerWheel")).get(1).sendKeys("8");
 		driver.findElements(By.className("UIAPickerWheel")).get(2).sendKeys("10");
 //
 		driver.findElements(By.className("UIAPickerWheel")).get(3).sendKeys("AM"); 
